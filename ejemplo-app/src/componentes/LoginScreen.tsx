@@ -17,8 +17,8 @@ export default function LoginScreen() {
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
-  const USER_HARDCODED = 'admin';
-  const PASSWORD_HARDCODED = '1234';
+  const USER_HARDCODED = 'angie';
+  const PASSWORD_HARDCODED = 't3qu3r3m0s';
 
   const validateLogin = () => {
     if (
@@ -38,6 +38,7 @@ export default function LoginScreen() {
       <Header />
 
       <View style={styles.formContainer}>
+        <Logo />
         <CustomInput
           placeholder="Usuario"
           value={user}
@@ -77,7 +78,7 @@ export default function LoginScreen() {
           </Text>
         )}
 
-        <Logo />
+        
       </View>
     </View>
   );

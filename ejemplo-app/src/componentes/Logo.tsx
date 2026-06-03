@@ -1,10 +1,12 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 
+import cocaCola from '../../assets/coca-cola.png';
+
 export default function Logo() {
   return (
     <Image
-      source={require('../assets/coca-cola.png')}
+      source={cocaCola}
       style={styles.logo}
       resizeMode="contain"
     />
