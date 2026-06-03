@@ -19,6 +19,7 @@ export default function LoginScreen() {
 
   const USER_HARDCODED = 'angie';
   const PASSWORD_HARDCODED = 't3qu3r3m0s';
+  
 
   const validateLogin = () => {
     if (
