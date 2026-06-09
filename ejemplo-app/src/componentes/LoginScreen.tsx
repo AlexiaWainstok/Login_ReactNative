@@ -8,19 +8,24 @@ import {
 } from 'react-native';
 
 import Header from '../componentes/Header';
-import CustomInput from '../componentes/CustomInput';
+import CustomInput from './CustomInput';
 import LoginButton from '../componentes/LoginButton';
 import Logo from '../componentes/Logo';
 
+//[IA: ChatGpt, Le pregunté a ChatGPT cómo manejar los datos que escribe el usuario y
+//  me explicó el uso de useState para guardar el usuario, la contraseña y el mensaje que se muestra en pantalla.]
 export default function LoginScreen() {
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
+  
   const USER_HARDCODED = 'angie';
   const PASSWORD_HARDCODED = 't3qu3r3m0s';
   
 
+  //[IA: ChatGpt, me ayudó a entender cómo comparar los datos ingresados por el usuario con los 
+  // valores hardcodeados y mostrar distintos mensajes según el resultado.]
   const validateLogin = () => {
     if (
       user === USER_HARDCODED &&
